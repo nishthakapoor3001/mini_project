@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Assignment</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <img src="jungleworks.JPG" alt="photo" class="logo">
+            <div class="top-right">
+                <div class="closebtn" onclick="closeNav()"> × </div>
+            </div>
+            <p><div class="box1"><a href="#" style="text-decoration: none;color: rgba(33, 119, 98, 0.959);">Dashboard</a></div><br>
+            <div class="box2"><a href="#" style="text-decoration: none; color: rgba(33, 119, 98, 0.959);">Drivers</a></div><br>
+            <div class="box3"><a href="#" style="text-decoration: none; color: rgba(33, 119, 98, 0.959);">Customers</a></div><br>
+            <div class="box4"><a href="#" style="text-decoration: none; color: rgba(33, 119, 98, 0.959);">All Vehicles</a></div><br>
+            <div class="box5"><a href="#" style="text-decoration: none; color: rgba(33, 119, 98, 0.959);">Settings</a></div></p>
+
+            </div>
+            
+            <div id="main">
+            <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"> Open </i></button> 
+            <p class="mypic" id="photo">  </p>
+            <script>
+                function display(src, alt) {
+                  var a = document.createElement("img");
+                  a.src = src;
+                  a.alt = alt;
+        
+                  document.getElementById("photo").appendChild(a).style.width = "500";
+                  
+                }
+                var img = "https://drive.google.com/uc?id=1RQM4_NYSGx3POJJthqQKjO9XibEsbILj";
+                display(img, "photo");
+              </script>
+            </div>
+          <script>
+              function openNav() {
+                  document.getElementById("mySidebar").style.width = "400px";
+                  document.getElementById("main").style.marginLeft = "250px";
+                }
+    
+               function closeNav() {
+                    document.getElementById("mySidebar").style.width = "0";
+                    document.getElementById("main").style.marginLeft= "0";
+                } 
+          </script>
+    </body>
+</html>

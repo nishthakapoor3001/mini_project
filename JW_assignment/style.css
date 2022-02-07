@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(133, 153, 241) ;
+}
+
+.sidebar {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(150, 201, 218);
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-radius: 10px;
+    
+    }
+
+div.box1:hover ,div.box2:hover,div.box3:hover,div.box4:hover ,div.box5:hover {
+        background-color: rgb(150, 201, 218);
+    }
+img.logo{
+     width: 100%;
+ }   
+.box1 , .box2, .box3 , .box4, .box5{
+    background-color: rgb(214, 235, 248);
+    height: 65px;
+}
+
+
+    .sidebar div {
+    padding: 8px 5px 8px 10px;
+    font-size: 40px;
+    /*display: block;*/
+    transition: 0.5s;
+    cursor: pointer;
+    color: rgb(126, 183, 221);
+    font-family: Bradley Hand, cursive ;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 10;
+    }
+    
+    .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    }
+    
+    .openbtn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: lightblue;
+    }
+    
+    #main {
+    transition: margin-left .5s;
+    }
+
+  .mypic {
+       padding-left:37% ;
+       
+   } 
